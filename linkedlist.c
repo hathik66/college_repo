@@ -14,7 +14,7 @@ void main()
 	int ch,entry,count;
 	while(1)
 	{
-		printf("\n1.Insert\n2.Display\n3.count\n4.Exit\n");
+		printf("\n1.Insert\n2.Display\n3.Exit\n");
 		printf("Enter your choice: ");
 		scanf("%d",&ch);
 		switch(ch)
@@ -45,20 +45,9 @@ void main()
 					printf("\t%d",pos->data);
 					pos=pos->next;
 				}break;
-			case 3:	
-			        count=0;
-				pos=head;
-				printf("\nElements are : ");
-				while(pos!=NULL)
-				{
-					count++;
-					pos=pos->next;
-					
-				}
-				printf("%d",count);
-				break;
-			case 4:
-				printf("\nGoodbye");
+			
+			case 3:
+				printf("\nGoodbye\n");
 				exit(0);
 		}
 	}
