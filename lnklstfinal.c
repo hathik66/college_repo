@@ -27,11 +27,23 @@ void main()
 					tail = head;					
 				}
 			  else
+				{pos=head;
+				while(pos!=NULL)
 				{
+					count++;
+					pos=pos->next;
+				}
+				printf("no of elements is :%d\n",count);
 				 	tail -> next=(struct node *)malloc(sizeof(struct node));
 					tail = tail -> next;
 					tail -> data=entry;	
+				}pos=head;
+				while(pos!=NULL)
+				{
+					count++;
+					pos=pos->next;
 				}
+				printf("no of elements is :%d\n",count);
 			}break;
 		case 2: {
 	  		  pos=head;
@@ -43,13 +55,13 @@ void main()
 				}break;
 			}
 		case 3: {
-	  		  pos=head;
-			  while(pos!=NULL)
+	  		 pos=head;
+				while(pos!=NULL)
 				{
-					c=c+1;
-					pos=pos -> next;	
-				}printf("\n The Number of elements are : %d",c);
-				break;
+					count++;
+					pos=pos->next;
+				}
+				printf("no of elements is :%d\n",count);
 			}
 		case 4: {
 	  		  pos=head;
